@@ -39,7 +39,7 @@ namespace CleanArchitecture.WebUI
             services.AddHealthChecks()
                 .AddDbContextCheck<ApplicationDbContext>();
 
-            services.AddControllersWithViews(options => 
+            services.AddControllersWithViews(options =>
                 options.Filters.Add(new ApiExceptionFilter()));
 
             services.AddRazorPages();
